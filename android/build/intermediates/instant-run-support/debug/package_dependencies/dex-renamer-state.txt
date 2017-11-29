@@ -1,0 +1,13 @@
+#Wed Nov 29 11:28:14 WET 2017
+renamed.3=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes4.dex
+renamed.0=classes2.dex
+base.3=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-1.9.7_b0de02bfcf118f3da5831ed18dd20e8764939c0a
+base.2=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-box2d-1.9.7_484096af5df7ef6a9d2ffb76991ce7a0bfa10a04
+base.1=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-freetype-1.9.7_24818a28432f1bdd35646ca3f302b2586af854e5
+base.0=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-backend-android-1.9.7_a8e23534fd22395e8d5a3e0b5ff341a9d3ea2f89
+file.3=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-1.9.7_b0de02bfcf118f3da5831ed18dd20e8764939c0a/classes.dex
+file.2=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-box2d-1.9.7_484096af5df7ef6a9d2ffb76991ce7a0bfa10a04/classes.dex
+file.1=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-freetype-1.9.7_24818a28432f1bdd35646ca3f302b2586af854e5/classes.dex
+file.0=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-backend-android-1.9.7_a8e23534fd22395e8d5a3e0b5ff341a9d3ea2f89/classes.dex

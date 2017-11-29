@@ -1,0 +1,7 @@
+#Wed Nov 29 12:29:01 WET 2017
+base.0=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_97730f1a772edd06f7e94bef6080b55db3e6e3a9
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_498a240d626d3b3fbe112c6af33a97ee5b564e0a/classes.dex
+base.1=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_498a240d626d3b3fbe112c6af33a97ee5b564e0a
+file.0=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_97730f1a772edd06f7e94bef6080b55db3e6e3a9/classes.dex
