@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 
@@ -46,21 +47,21 @@ public class PlayState extends State {
 
         cam.position.set(cam.viewportWidth / 2f, cam.viewportHeight / 2f, 0);
         cam.update();
+
+        GestureDetector gestureDetector = new GestureDetector(new PlayStateGestureListener(this));
+        Gdx.input.setInputProcessor(gestureDetector);
     }
 
     @Override
     public void handleInput() {
 
-        // pointCannonToPointer();
-        handleTouchInput();
+    }
 
-        if (Gdx.input.isTouched() && !ballInMotion) {
+    protected void shoot() {
 
-            activeBall.setVelocity(ballVelocity());
+        activeBall.setVelocity(ballVelocity());
 
-            ballInMotion = true;
-        }
-
+        ballInMotion = true;
     }
 
     private Vector2 getTouchPosition() {
@@ -90,12 +91,12 @@ public class PlayState extends State {
 
     }
 
-    private void rotateCannonRight() {
+    protected void rotateCannonRight() {
 
         cannon.getSprite().setRotation(cannon.getRotation() + 2);
     }
 
-    private void rotateCannonLeft() {
+    protected void rotateCannonLeft() {
 
         cannon.getSprite().setRotation(cannon.getRotation() - 2);
     }
@@ -190,5 +191,9 @@ public class PlayState extends State {
             }
 
         }
+    }
+
+    public Cannon getCannon() {
+        return cannon;
     }
 }
