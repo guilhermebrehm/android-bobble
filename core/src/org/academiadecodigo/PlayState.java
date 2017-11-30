@@ -120,8 +120,6 @@ public class PlayState extends State {
     @Override
     public void update(float dt) {
 
-        handleInput();
-
         for (Ball ball : balls) {
 
             ball.update(dt);
