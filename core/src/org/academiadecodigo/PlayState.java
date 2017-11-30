@@ -2,6 +2,7 @@ package org.academiadecodigo;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
@@ -41,7 +42,7 @@ public class PlayState extends State {
         float w = Gdx.graphics.getWidth();
         float h = Gdx.graphics.getHeight();
 
-        cam = new OrthographicCamera(w,h);
+        cam = new OrthographicCamera(w, h);
 
         cam.position.set(cam.viewportWidth / 2f, cam.viewportHeight / 2f, 0);
         cam.update();
@@ -50,14 +51,8 @@ public class PlayState extends State {
     @Override
     public void handleInput() {
 
-        Vector3 touchPosition3 = cam.unproject(new Vector3(Gdx.input.getX(), Gdx.input.getY(), 0));
-
-        Vector2 touchPosition = new Vector2(touchPosition3.x, touchPosition3.y);
-
-        Vector2 velocityVector = new Vector2(cannon.getCenterPositionVector().x - touchPosition.x,
-                touchPosition.y - cannon.getCenterPositionVector().y).nor().scl(10);
-
-        cannon.getSprite().setRotation(-(int) velocityVector.angle() + 180);
+        // pointCannonToPointer();
+        handleTouchInput();
 
         if (Gdx.input.isTouched() && !ballInMotion) {
 
@@ -65,6 +60,54 @@ public class PlayState extends State {
 
             ballInMotion = true;
         }
+
+    }
+
+    private Vector2 getTouchPosition() {
+
+        Vector3 touchPosition3 = cam.unproject(new Vector3(Gdx.input.getX(), Gdx.input.getY(), 0));
+
+        return new Vector2(touchPosition3.x, touchPosition3.y);
+
+    }
+
+    private void handleTouchInput() {
+
+        if(!Gdx.input.isTouched()) {
+            return;
+        }
+
+        Vector2 touchPosition = getTouchPosition();
+
+        if(touchPosition.x < Gdx.graphics.getWidth() / 2) {
+
+            rotateCannonLeft();
+
+        } else if (touchPosition.x > Gdx.graphics.getWidth() / 2) {
+
+            rotateCannonRight();
+        }
+
+    }
+
+    private void rotateCannonRight() {
+
+        cannon.getSprite().setRotation(cannon.getRotation() + 2);
+    }
+
+    private void rotateCannonLeft() {
+
+        cannon.getSprite().setRotation(cannon.getRotation() - 2);
+    }
+
+    private void pointCannonToPointer() {
+
+        Vector2 touchPosition = getTouchPosition();
+
+        Vector2 velocityVector = new Vector2(cannon.getCenterPositionVector().x - touchPosition.x,
+                touchPosition.y - cannon.getCenterPositionVector().y).nor().scl(10);
+
+        cannon.getSprite().setRotation(-(int) velocityVector.angle() + 180);
 
     }
 
@@ -100,6 +143,7 @@ public class PlayState extends State {
 
     @Override
     public void dispose() {
+
 
     }
 
