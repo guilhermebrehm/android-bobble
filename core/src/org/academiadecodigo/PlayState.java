@@ -8,6 +8,8 @@ import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 
+import org.academiadecodigo.grid.Grid;
+import org.academiadecodigo.grid.Position;
 import org.academiadecodigo.sprites.Ball;
 import org.academiadecodigo.sprites.Cannon;
 
@@ -22,6 +24,7 @@ public class PlayState extends State {
 
     private List<Ball> balls;
     private Cannon cannon;
+    private Grid grid;
 
     private Ball activeBall;
     private boolean ballInMotion;
@@ -30,6 +33,8 @@ public class PlayState extends State {
 
     public PlayState(GameStateManager gsm) {
         super(gsm);
+
+        grid = new Grid();
 
         cannon = new Cannon();
 
@@ -134,6 +139,13 @@ public class PlayState extends State {
         sb.begin();
 
         cannon.getSprite().draw(sb);
+
+        for(Position[] positions : grid.getPositions()) {
+            for(Position position : positions) {
+
+                position.getSprite().draw(sb);
+            }
+        }
 
         for (Ball ball : balls) {
             ball.getSprite().draw(sb);

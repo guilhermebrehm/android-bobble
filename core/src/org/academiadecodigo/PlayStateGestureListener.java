@@ -42,11 +42,9 @@ public class PlayStateGestureListener implements GestureDetector.GestureListener
     @Override
     public boolean pan(float x, float y, float deltaX, float deltaY) {
 
-        System.out.println(deltaX);
+        int initialRotation = (int) playState.getCannon().getRotation();
 
         if(deltaX > 0) {
-
-            int initialRotation = (int) playState.getCannon().getRotation();
 
             if(initialRotation + deltaX > playState.getCannon().getRotation()) {
 
@@ -55,8 +53,6 @@ public class PlayStateGestureListener implements GestureDetector.GestureListener
             }
 
         } else if (deltaX < 0) {
-
-            int initialRotation = (int) playState.getCannon().getRotation();
 
             if(initialRotation + deltaX < playState.getCannon().getRotation()) {
 
