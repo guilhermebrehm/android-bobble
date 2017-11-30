@@ -54,9 +54,10 @@ public class PlayState extends State {
 
         Vector2 touchPosition = new Vector2(touchPosition3.x, touchPosition3.y);
 
-        Vector2 velocityVector = touchPosition.sub(cannon.getCenterPositionVector()).nor().scl(10);
+        Vector2 velocityVector = new Vector2(cannon.getCenterPositionVector().x - touchPosition.x,
+                touchPosition.y - cannon.getCenterPositionVector().y).nor().scl(10);
 
-        cannon.getSprite().setRotation(-(int) velocityVector.angle());
+        cannon.getSprite().setRotation(-(int) velocityVector.angle() + 180);
 
         if (Gdx.input.isTouched() && !ballInMotion) {
 
@@ -136,6 +137,11 @@ public class PlayState extends State {
 
             if (Math.pow(ball.getX() - activeBall.getX(), 2) + Math.pow(ball.getY() - activeBall.getY(), 2) <= Math.pow(45, 2)) {
                 activeBall.stop();
+
+                if (activeBall.getBallType() == ball.getBallType()) {
+                    balls.remove(activeBall);
+                    balls.remove(ball);
+                }
                 return;
             }
 

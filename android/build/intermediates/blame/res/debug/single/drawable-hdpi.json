@@ -2,5 +2,9 @@
     {
         "merged": "/Users/codecadet/dev/android-test/android/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
         "source": "/Users/codecadet/dev/android-test/android/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/guilherme/dev/android-bobble/android/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/home/guilherme/dev/android-bobble/android/res/drawable-hdpi/ic_launcher.png"
     }
 ]

@@ -97,4 +97,8 @@ public class Ball {
     public Sprite getSprite() {
         return sprite;
     }
+
+    public BallType getBallType() {
+        return ballType;
+    }
 }
