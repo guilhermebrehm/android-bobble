@@ -170,6 +170,8 @@ public class PlayState extends State {
                 return;
             }
 
+            grid.fitBall(ball);
+
         }
     }
 

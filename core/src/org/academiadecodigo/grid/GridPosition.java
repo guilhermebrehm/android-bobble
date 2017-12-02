@@ -55,6 +55,13 @@ public class GridPosition {
     public void occupy(Ball ball) {
 
         this.ball = ball;
+        float spriteX = sprite.getX();
+        float spriteY = sprite.getY();
+
         sprite = ball.getSprite();
+        sprite.setX(spriteX);
+        sprite.setY(spriteY);
+
+        ball.stop();
     }
 }
