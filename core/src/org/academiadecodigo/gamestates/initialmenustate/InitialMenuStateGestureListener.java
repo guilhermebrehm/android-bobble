@@ -1,20 +1,22 @@
-package org.academiadecodigo;
+package org.academiadecodigo.gamestates.initialmenustate;
 
 import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.math.Vector2;
 
+import org.academiadecodigo.GameStateManager;
+import org.academiadecodigo.gamestates.playstate.PlayState;
+
 /**
- * Created by codecadet on 30/11/2017.
+ * Created by guilherme on 02-12-2017.
  */
 
+public class InitialMenuStateGestureListener implements GestureDetector.GestureListener{
 
-public class PlayStateGestureListener implements GestureDetector.GestureListener {
+    private GameStateManager gsm;
 
-    PlayState playState;
+    public InitialMenuStateGestureListener(GameStateManager gsm) {
 
-    public PlayStateGestureListener(PlayState playState) {
-
-        this.playState = playState;
+        this.gsm = gsm;
     }
 
     @Override
@@ -25,7 +27,7 @@ public class PlayStateGestureListener implements GestureDetector.GestureListener
     @Override
     public boolean tap(float x, float y, int count, int button) {
 
-        playState.shoot();
+        gsm.push(new PlayState(gsm));
         return true;
     }
 
@@ -41,33 +43,11 @@ public class PlayStateGestureListener implements GestureDetector.GestureListener
 
     @Override
     public boolean pan(float x, float y, float deltaX, float deltaY) {
-
-        int initialRotation = (int) playState.getCannon().getRotation();
-
-        if(deltaX > 0) {
-
-            if(initialRotation + deltaX > playState.getCannon().getRotation()) {
-
-                playState.rotateCannonLeft();
-
-            }
-
-        } else if (deltaX < 0) {
-
-            if(initialRotation + deltaX < playState.getCannon().getRotation()) {
-
-                playState.rotateCannonRight();
-
-            }
-
-        }
-
-        return true;
+        return false;
     }
 
     @Override
     public boolean panStop(float x, float y, int pointer, int button) {
-
         return false;
     }
 

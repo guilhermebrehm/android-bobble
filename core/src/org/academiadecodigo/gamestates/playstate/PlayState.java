@@ -1,15 +1,16 @@
-package org.academiadecodigo;
+package org.academiadecodigo.gamestates.playstate;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.input.GestureDetector;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 
+import org.academiadecodigo.GameStateManager;
+import org.academiadecodigo.State;
 import org.academiadecodigo.grid.Grid;
-import org.academiadecodigo.grid.Position;
+import org.academiadecodigo.grid.GridPosition;
 import org.academiadecodigo.sprites.Ball;
 import org.academiadecodigo.sprites.Cannon;
 
@@ -57,12 +58,11 @@ public class PlayState extends State {
         Gdx.input.setInputProcessor(gestureDetector);
     }
 
-    @Override
-    public void handleInput() {
-
-    }
-
     protected void shoot() {
+
+        if(ballInMotion) {
+            return;
+        }
 
         activeBall.setVelocity(ballVelocity());
 
@@ -77,25 +77,6 @@ public class PlayState extends State {
 
     }
 
-    private void handleTouchInput() {
-
-        if(!Gdx.input.isTouched()) {
-            return;
-        }
-
-        Vector2 touchPosition = getTouchPosition();
-
-        if(touchPosition.x < Gdx.graphics.getWidth() / 2) {
-
-            rotateCannonLeft();
-
-        } else if (touchPosition.x > Gdx.graphics.getWidth() / 2) {
-
-            rotateCannonRight();
-        }
-
-    }
-
     protected void rotateCannonRight() {
 
         cannon.getSprite().setRotation(cannon.getRotation() + 2);
@@ -104,17 +85,6 @@ public class PlayState extends State {
     protected void rotateCannonLeft() {
 
         cannon.getSprite().setRotation(cannon.getRotation() - 2);
-    }
-
-    private void pointCannonToPointer() {
-
-        Vector2 touchPosition = getTouchPosition();
-
-        Vector2 velocityVector = new Vector2(cannon.getCenterPositionVector().x - touchPosition.x,
-                touchPosition.y - cannon.getCenterPositionVector().y).nor().scl(10);
-
-        cannon.getSprite().setRotation(-(int) velocityVector.angle() + 180);
-
     }
 
     @Override
@@ -138,10 +108,10 @@ public class PlayState extends State {
 
         cannon.getSprite().draw(sb);
 
-        for(Position[] positions : grid.getPositions()) {
-            for(Position position : positions) {
+        for(GridPosition[] gridPositions : grid.getGridPositions()) {
+            for(GridPosition gridPosition : gridPositions) {
 
-                position.getSprite().draw(sb);
+                gridPosition.getSprite().draw(sb);
             }
         }
 
@@ -206,4 +176,5 @@ public class PlayState extends State {
     public Cannon getCannon() {
         return cannon;
     }
+
 }

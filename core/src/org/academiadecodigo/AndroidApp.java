@@ -3,8 +3,10 @@ package org.academiadecodigo;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+import org.academiadecodigo.gamestates.initialmenustate.InitialMenuState;
+import org.academiadecodigo.gamestates.playstate.PlayState;
 
 public class AndroidApp extends ApplicationAdapter {
 
@@ -16,7 +18,7 @@ public class AndroidApp extends ApplicationAdapter {
 		batch = new SpriteBatch();
 
 		gsm = new GameStateManager();
-		gsm.push(new PlayState(gsm));
+		gsm.push(new InitialMenuState(gsm));
 
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 	}

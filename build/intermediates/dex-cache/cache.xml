@@ -3,12 +3,48 @@
 
     <item
         is-multidex="false"
-        jar="/Users/codecadet/dev/android-bobble/core/build/libs/core-1.0.jar"
+        jar="/home/guilherme/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-freetype/1.9.7/aa953bdba7adc9c8f301274ddc797705460565ab/gdx-freetype-1.9.7.jar"
         jumboMode="false"
         optimize="true"
         revision="27.0.1"
-        sha1="f58a7982c58f6252f072daf3bfc3e4424e80e93f">
-        <dex dex="/Users/codecadet/dev/android-bobble/android/build/intermediates/pre-dexed/debug/core-1.0_47c8031ef719367147930b661c592e5587fdd112.jar" />
+        sha1="aa953bdba7adc9c8f301274ddc797705460565ab">
+        <dex dex="/home/guilherme/dev/android-bobble/android/build/intermediates/pre-dexed/debug/gdx-freetype-1.9.7_a619f6092c95b86378b2670740b7fe17e8e40ffa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/guilherme/dev/android-bobble/core/build/libs/core-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="8e79e2c74f2951f5db57853387a8d1d577fb6771">
+        <dex dex="/home/guilherme/dev/android-bobble/android/build/intermediates/pre-dexed/debug/core-1.0_06a813c94bef9ea4dbdf4c3907d81f31d483c0e7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/guilherme/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx/1.9.7/8a021ba0bb6555c25dfc272697d379215aa05ed1/gdx-1.9.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="8a021ba0bb6555c25dfc272697d379215aa05ed1">
+        <dex dex="/home/guilherme/dev/android-bobble/android/build/intermediates/pre-dexed/debug/gdx-1.9.7_c34d50899a200346bce5afe4bd3c7e81059f4745.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/guilherme/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.7/884a964d5a09643269390bdc4d30fc7bf8b0b9eb/gdx-backend-android-1.9.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="884a964d5a09643269390bdc4d30fc7bf8b0b9eb">
+        <dex dex="/home/guilherme/dev/android-bobble/android/build/intermediates/pre-dexed/debug/gdx-backend-android-1.9.7_42b9a54f0de80e5c5c729c5be7b3eb76f4d15090.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/guilherme/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-box2d/1.9.7/ad5b0c9246497c2141580f26ad82f51ecc9879e5/gdx-box2d-1.9.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="ad5b0c9246497c2141580f26ad82f51ecc9879e5">
+        <dex dex="/home/guilherme/dev/android-bobble/android/build/intermediates/pre-dexed/debug/gdx-box2d-1.9.7_aead48d3c75531570359b76dc5ca0bbc974a2f65.jar" />
     </item>
 
 </items>

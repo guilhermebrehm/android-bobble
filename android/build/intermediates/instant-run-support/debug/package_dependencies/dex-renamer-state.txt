@@ -1,13 +1,13 @@
-#Wed Nov 29 11:28:14 WET 2017
-renamed.3=classes.dex
+#Fri Dec 01 14:50:29 WET 2017
+renamed.3=classes2.dex
 renamed.2=classes3.dex
 renamed.1=classes4.dex
-renamed.0=classes2.dex
-base.3=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-1.9.7_b0de02bfcf118f3da5831ed18dd20e8764939c0a
-base.2=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-box2d-1.9.7_484096af5df7ef6a9d2ffb76991ce7a0bfa10a04
-base.1=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-freetype-1.9.7_24818a28432f1bdd35646ca3f302b2586af854e5
-base.0=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-backend-android-1.9.7_a8e23534fd22395e8d5a3e0b5ff341a9d3ea2f89
-file.3=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-1.9.7_b0de02bfcf118f3da5831ed18dd20e8764939c0a/classes.dex
-file.2=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-box2d-1.9.7_484096af5df7ef6a9d2ffb76991ce7a0bfa10a04/classes.dex
-file.1=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-freetype-1.9.7_24818a28432f1bdd35646ca3f302b2586af854e5/classes.dex
-file.0=/Users/codecadet/dev/android-test/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-backend-android-1.9.7_a8e23534fd22395e8d5a3e0b5ff341a9d3ea2f89/classes.dex
+renamed.0=classes.dex
+base.3=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-1.9.7_c34d50899a200346bce5afe4bd3c7e81059f4745
+base.2=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-freetype-1.9.7_a619f6092c95b86378b2670740b7fe17e8e40ffa
+base.1=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-backend-android-1.9.7_42b9a54f0de80e5c5c729c5be7b3eb76f4d15090
+base.0=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-box2d-1.9.7_aead48d3c75531570359b76dc5ca0bbc974a2f65
+file.3=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-1.9.7_c34d50899a200346bce5afe4bd3c7e81059f4745/classes.dex
+file.2=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-freetype-1.9.7_a619f6092c95b86378b2670740b7fe17e8e40ffa/classes.dex
+file.1=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-backend-android-1.9.7_42b9a54f0de80e5c5c729c5be7b3eb76f4d15090/classes.dex
+file.0=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-box2d-1.9.7_aead48d3c75531570359b76dc5ca0bbc974a2f65/classes.dex

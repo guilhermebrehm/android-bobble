@@ -1,16 +1,18 @@
 package org.academiadecodigo.grid;
 
+import com.badlogic.gdx.graphics.g2d.Sprite;
+
 /**
  * Created by codecadet on 30/11/2017.
  */
 
 public class Grid {
 
-    private Position[][] positions;
+    private GridPosition[][] gridPositions;
 
     public Grid() {
 
-        positions = new Position[8][8];
+        gridPositions = new GridPosition[8][8];
 
         populatePosition();
     }
@@ -21,12 +23,30 @@ public class Grid {
 
             for (int j = 0; j < 8; j++) {
 
-                positions[i][j] = new Position(j * 60, i * 60);
+                int x = i % 2 == 0 ? j * 60 : j * 60 + 30;
+                int y = i * 60 + 30;
+
+                gridPositions[i][j] = new GridPosition(x, y);
             }
         }
     }
 
-    public Position[][] getPositions() {
-        return positions;
+    public GridPosition[][] getGridPositions() {
+        return gridPositions;
+    }
+
+    public GridPosition getEnclosingGridPosition(Sprite sprite) {
+
+        for (int i = 0; i < 8; i++) {
+
+            for (int j = 0; j < 8; j++) {
+
+                if(gridPositions[i][j].isSpriteInside(sprite)) {
+
+
+                }
+            }
+        }
+
     }
 }

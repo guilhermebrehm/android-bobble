@@ -6,26 +6,23 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1511974554981"
+    timestamp="1512139843752"
     token="4207779915811690787"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="80" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="13" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
-    <artifact
-        location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
     <artifact
         location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_9.apk"
         type="SPLIT" />
@@ -33,10 +30,49 @@
         location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
     <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/dep/dependencies.apk"
         type="SPLIT" />
     <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
         type="SPLIT" />
     <artifact
         location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -45,28 +81,22 @@
         location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_5.apk"
         type="SPLIT" />
     <artifact
         location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/codecadet/dev/android-test/android/build/outputs/apk/android-debug.apk"
+        location="/home/guilherme/dev/android-bobble/android/build/outputs/apk/android-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1511974554981"
+        timestamp="1512139843752"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
         <artifact
             location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
@@ -74,10 +104,49 @@
             location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
             location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -86,19 +155,16 @@
             location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="/home/guilherme/dev/android-bobble/android/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/codecadet/dev/android-test/android/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/codecadet/dev/android-test/android/build/outputs/apk/android-debug.apk"
+            location="/home/guilherme/dev/android-bobble/android/build/outputs/apk/android-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 
