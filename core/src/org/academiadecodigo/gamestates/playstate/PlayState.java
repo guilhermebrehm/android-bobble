@@ -69,13 +69,13 @@ public class PlayState extends State {
         ballInMotion = true;
     }
 
-    private Vector2 getTouchPosition() {
+    /*private Vector2 getTouchPosition() {
 
         Vector3 touchPosition3 = cam.unproject(new Vector3(Gdx.input.getX(), Gdx.input.getY(), 0));
 
         return new Vector2(touchPosition3.x, touchPosition3.y);
 
-    }
+    }*/
 
     protected void rotateCannonRight() {
 
@@ -147,10 +147,10 @@ public class PlayState extends State {
 
         if (!activeBall.isMoving()) {
 
-            activeBall = new Ball(cannon);
-            ballInMotion = false;
+                activeBall = new Ball(cannon);
+                ballInMotion = false;
 
-            balls.add(activeBall);
+                balls.add(activeBall);
             return;
         }
 
@@ -170,7 +170,10 @@ public class PlayState extends State {
                 return;
             }
 
-            grid.fitBall(ball);
+            if(!ball.isFit()) {
+                grid.fitBall(ball);
+                ball.setFit(true);
+            }
 
         }
     }

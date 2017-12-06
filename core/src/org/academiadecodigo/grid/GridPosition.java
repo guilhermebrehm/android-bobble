@@ -2,6 +2,7 @@ package org.academiadecodigo.grid;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.math.Vector2;
 
 import org.academiadecodigo.sprites.Ball;
 
@@ -16,8 +17,8 @@ public class GridPosition {
 
     public GridPosition(int x, int y) {
 
-        sprite = new Sprite(new Texture("red-pokeball.png"));
-        sprite.setSize(50, 50);
+        sprite = new Sprite(new Texture("share.png"));
+        sprite.setSize(64, 64);
         sprite.setX(x);
         sprite.setY(y);
     }
@@ -63,5 +64,11 @@ public class GridPosition {
         sprite.setY(spriteY);
 
         ball.stop();
+    }
+
+    public Vector2 centerPosition() {
+
+        return new Vector2(sprite.getX()+ sprite.getWidth() / 2,
+                sprite.getY() + sprite.getHeight() / 2);
     }
 }

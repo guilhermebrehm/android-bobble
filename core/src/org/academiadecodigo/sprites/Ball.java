@@ -17,6 +17,7 @@ public class Ball {
     private Sprite sprite;
 
     private boolean moving;
+    private boolean fit;
 
     public Ball(Cannon cannon) {
 
@@ -90,12 +91,25 @@ public class Ball {
         return (int) sprite.getY();
     }
 
+    public Vector2 getCenterPosition() {
+        return new Vector2(sprite.getX() + sprite.getWidth() / 2,
+                sprite.getY() + sprite.getHeight() / 2);
+    }
+
     public boolean isMoving() {
         return moving;
     }
 
     public Sprite getSprite() {
         return sprite;
+    }
+
+    public boolean isFit() {
+        return fit;
+    }
+
+    public void setFit(boolean fit) {
+        this.fit = fit;
     }
 
     public BallType getBallType() {
