@@ -71,6 +71,29 @@ public class Ball {
 
     }
 
+    public boolean isColliding() {
+
+        if (sprite.getY() + sprite.getHeight() >= Gdx.graphics.getHeight()) {
+
+            velocity.x = 0;
+            velocity.y = 0;
+            moving = false;
+
+            return true;
+        }
+
+        if (sprite.getY() <= 0) {
+
+            velocity.x = 0;
+            velocity.y = 0;
+            moving = false;
+
+            return true;
+        }
+
+        return false;
+    }
+
     public void stop() {
         velocity.x = 0;
         velocity.y = 0;

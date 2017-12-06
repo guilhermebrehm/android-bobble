@@ -60,7 +60,7 @@ public class PlayState extends State {
 
     protected void shoot() {
 
-        if(ballInMotion) {
+        if (ballInMotion) {
             return;
         }
 
@@ -108,8 +108,8 @@ public class PlayState extends State {
 
         cannon.getSprite().draw(sb);
 
-        for(GridPosition[] gridPositions : grid.getGridPositions()) {
-            for(GridPosition gridPosition : gridPositions) {
+        for (GridPosition[] gridPositions : grid.getGridPositions()) {
+            for (GridPosition gridPosition : gridPositions) {
 
                 gridPosition.getSprite().draw(sb);
             }
@@ -147,32 +147,31 @@ public class PlayState extends State {
 
         if (!activeBall.isMoving()) {
 
-                activeBall = new Ball(cannon);
-                ballInMotion = false;
+            activeBall = new Ball(cannon);
+            ballInMotion = false;
 
-                balls.add(activeBall);
+            balls.add(activeBall);
             return;
         }
 
         for (Ball ball : balls) {
 
-            if (ball == activeBall) {
-                continue;
+            if (ball.isColliding()) {
+                if (!ball.isFit()) {
+                    grid.fitBall(ball);
+                    ball.setFit(true);
+                }
             }
 
-            if (Math.pow(ball.getX() - activeBall.getX(), 2) + Math.pow(ball.getY() - activeBall.getY(), 2) <= Math.pow(45, 2)) {
+
+            if (Math.pow(ball.getX() - activeBall.getX(), 2) + Math.pow(ball.getY() - activeBall.getY(), 2) <= Math.pow(45, 2) && ball != activeBall) {
                 activeBall.stop();
 
-                if (activeBall.getBallType() == ball.getBallType()) {
-                    balls.remove(activeBall);
-                    balls.remove(ball);
+                if (!activeBall.isFit()) {
+                    grid.fitBall(activeBall);
+                    activeBall.setFit(true);
                 }
-                return;
-            }
 
-            if(!ball.isFit()) {
-                grid.fitBall(ball);
-                ball.setFit(true);
             }
 
         }

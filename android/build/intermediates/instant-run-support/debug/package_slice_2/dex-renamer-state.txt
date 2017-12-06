@@ -1,4 +1,4 @@
-#Fri Dec 01 14:50:29 WET 2017
-base.0=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2
+#Wed Dec 06 15:53:14 WET 2017
+base.0=/Users/codecadet/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2
 renamed.0=classes.dex
-file.0=/home/guilherme/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex
+file.0=/Users/codecadet/dev/android-bobble/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex
