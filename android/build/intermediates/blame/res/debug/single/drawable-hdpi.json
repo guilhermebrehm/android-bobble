@@ -10,5 +10,9 @@
     {
         "merged": "/home/guilherme/dev/android-bobble/android/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
         "source": "/home/guilherme/dev/android-bobble/android/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/guilherme/dev/android-bobble/android/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/Users/guilherme/dev/android-bobble/android/res/drawable-hdpi/ic_launcher.png"
     }
 ]

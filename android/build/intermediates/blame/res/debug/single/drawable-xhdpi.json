@@ -8,6 +8,10 @@
         "source": "/Users/codecadet/dev/android-bobble/android/res/drawable-xhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/guilherme/dev/android-bobble/android/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/Users/guilherme/dev/android-bobble/android/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/codecadet/dev/android-test/android/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
         "source": "/Users/codecadet/dev/android-test/android/res/drawable-xhdpi/ic_launcher.png"
     }

@@ -50,6 +50,7 @@ public class Grid {
         GridPosition gridPosition = getClosestAvailableGridPosition(x, y);
 
         gridPosition.occupy(ball);
+        ball.setFit(true);
 
     }
 

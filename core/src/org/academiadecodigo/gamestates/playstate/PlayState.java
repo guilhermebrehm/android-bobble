@@ -157,23 +157,25 @@ public class PlayState extends State {
         for (Ball ball : balls) {
 
             if (ball.isColliding()) {
-                if (!ball.isFit()) {
-                    grid.fitBall(ball);
-                    ball.setFit(true);
-                }
+
+                fitAciveBall();
             }
 
 
             if (Math.pow(ball.getX() - activeBall.getX(), 2) + Math.pow(ball.getY() - activeBall.getY(), 2) <= Math.pow(45, 2) && ball != activeBall) {
                 activeBall.stop();
 
-                if (!activeBall.isFit()) {
-                    grid.fitBall(activeBall);
-                    activeBall.setFit(true);
-                }
+                fitAciveBall();
 
             }
 
+        }
+    }
+
+    private void fitAciveBall() {
+
+        if(!activeBall.isFit()){
+            grid.fitBall(activeBall);
         }
     }
 
